@@ -58,8 +58,7 @@
       "anthropic": "Anthropic",
       "openrouter": "OpenRouter",
       "groq": "Groq",
-      "glmGlobal": "GLM (Global)",
-      "glmChina": "GLM (China)"
+      "glmGlobal": "GLM (Global)"
     },
     "fields": {
       "name": "Name",
