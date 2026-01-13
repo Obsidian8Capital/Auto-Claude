@@ -287,6 +287,7 @@ describe('ProfileEditDialog - Create Mode', () => {
 
     expect(screen.getByLabelText(/base url/i)).toHaveValue('https://api.z.ai/api/anthropic');
     expect(screen.getByLabelText(/name/i)).toHaveValue('GLM (Global)');
+    expect(screen.getAllByDisplayValue('glm-4.7')).toHaveLength(4);
   });
 
   it('should not overwrite name when applying a preset', async () => {

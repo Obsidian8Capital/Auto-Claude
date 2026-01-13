@@ -153,6 +153,20 @@ export function ProfileEditDialog({ open, onOpenChange, onSaved, profile }: Prof
     if (!name.trim()) {
       setName(t(preset.labelKey));
     }
+    if (preset.modelDefaults) {
+      if (!defaultModel.trim() && preset.modelDefaults.default) {
+        setDefaultModel(preset.modelDefaults.default);
+      }
+      if (!haikuModel.trim() && preset.modelDefaults.haiku) {
+        setHaikuModel(preset.modelDefaults.haiku);
+      }
+      if (!sonnetModel.trim() && preset.modelDefaults.sonnet) {
+        setSonnetModel(preset.modelDefaults.sonnet);
+      }
+      if (!opusModel.trim() && preset.modelDefaults.opus) {
+        setOpusModel(preset.modelDefaults.opus);
+      }
+    }
   };
 
   // Validate form
